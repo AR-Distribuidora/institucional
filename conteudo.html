@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo | AR Distribuidora</title>
+    <meta name="description" content="Aprenda tudo sobre segurança eletrônica com nossos guias, tutoriais e dicas para instalação de câmeras e sistemas CFTV.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="AR Distribuidora" class="logo-img">
+                    <span class="logo-text">AR Distribuidora</span>
+                </a>
+                
+                <nav class="navigation">
+                    <a href="index.html" class="nav-link">Início</a>
+                    <a href="produtos.html" class="nav-link">Produtos</a>
+                    <a href="conteudo.html" class="nav-link active">Conteúdo</a>
+                    <a href="instaladores.html" class="nav-link">Para Instaladores</a>
+                    <a href="contato.html" class="nav-link">Contato</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <a href="https://shopee.com.br" target="_blank" class="btn-secondary">
+                        <i class="fas fa-shopping-cart"></i>
+                        Loja Shopee
+                    </a>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="page-title">Central de Conteúdo</h1>
+                <p class="page-subtitle">
+                    Guias, tutoriais e dicas para maximizar sua segurança eletrônica
+                </p>
+                <div class="search-content">
+                    <input type="text" id="contentSearch" placeholder="Buscar artigos..." class="search-box">
+                    <button class="search-button" onclick="searchContent()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Categories -->
+    <section class="content-categories">
+        <div class="container">
+            <div class="categories-grid">
+                <button class="category-btn active" data-category="all" onclick="filterContent('all')">
+                    <i class="fas fa-th"></i>
+                    Todos
+                </button>
+                <button class="category-btn" data-category="guias" onclick="filterContent('guias')">
+                    <i class="fas fa-book"></i>
+                    Guias de Instalação
+                </button>
+                <button class="category-btn" data-category="comparativos" onclick="filterContent('comparativos')">
+                    <i class="fas fa-balance-scale"></i>
+                    Comparativos
+                </button>
+                <button class="category-btn" data-category="dicas" onclick="filterContent('dicas')">
+                    <i class="fas fa-lightbulb"></i>
+                    Dicas de Segurança
+                </button>
+                <button class="category-btn" data-category="manutencao" onclick="filterContent('manutencao')">
+                    <i class="fas fa-cogs"></i>
+                    Manutenção
+                </button>
+                <button class="category-btn" data-category="videos" onclick="filterContent('videos')">
+                    <i class="fas fa-play"></i>
+                    Tutoriais em Vídeo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="featured-article">
+        <div class="container">
+            <div class="featured-content">
+                <div class="featured-text">
+                    <span class="featured-label">Artigo em Destaque</span>
+                    <h2 class="featured-title">Guia Completo: Como Escolher o Kit CFTV Ideal</h2>
+                    <p class="featured-description">
+                        Um guia detalhado para ajudar você a escolher o kit de câmeras perfeito para sua residência ou empresa. 
+                        Aprenda sobre tipos de câmeras, posicionamento ideal e configurações essenciais.
+                    </p>
+                    <div class="featured-meta">
+                        <span><i class="fas fa-clock"></i> 10 min de leitura</span>
+                        <span><i class="fas fa-tag"></i> Guia de Compra</span>
+                        <span><i class="fas fa-calendar"></i> 15 de Janeiro, 2025</span>
+                    </div>
+                    <button class="btn-primary" onclick="openArticle('guia-completo-kit-cftv')">
+                        Ler Artigo Completo
+                    </button>
+                </div>
+                <div class="featured-image">
+                    <img src="images/featured-guide.jpg" alt="Guia Completo Kit CFTV">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Grid -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-grid" id="contentGrid">
+                <!-- Guia de Instalação -->
+                <article class="content-card" data-category="guias">
+                    <div class="content-image">
+                        <img src="images/instalacao-passo-a-passo.jpg" alt="Instalação Passo a Passo">
+                        <div class="content-category-tag">Guias</div>
+                    </div>
+                    <div class="content-info">
+                        <h3 class="content-title">Instalação de Câmeras CFTV: Passo a Passo</h3>
+                        <p class="content-excerpt">
+                            Tutorial detalhado para instalar seu sistema de câmeras sem complicações. 
+                            Do planejamento à configuração final em menos de 2 horas.
+                        </p>
+                        <div class="content-meta">
+                            <span><i class="fas fa-clock"></i> 8 min</span>
+                            <span><i class="fas fa-eye"></i> 2.450 visualizações</span>
+                        </div>
+                        <button class="content-link" onclick="openArticle('instalacao-passo-a-passo')">
+                            Ler Mais <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Comparativo de Câmeras -->
+                <article class="content-card" data-category="comparativos">
+                    <div class="content-image">
+                        <img src="images/comparativo-cameras.jpg" alt="Comparativo de Câmeras">
+                        <div class="content-category-tag">Comparativos</div>
+                    </div>
+                    <div class="content-info">
+                        <h3 class="content-title">Câmeras HD vs 4K: Qual Escolher em 2025?</h3>
+                        <p class="content-excerpt">
+                            Análise completa das diferenças entre câmeras HD e 4K, incluindo 
+                            custo-benefício, qualidade de imagem e requisitos de armazenamento.
+                        </p>
+                        <div class="content-meta">
+                            <span><i class="fas fa-clock"></i> 6 min</span>
+                            <span><i class="fas fa-eye"></i> 1.890 visualizações</span>
+                        </div>
+                        <button class="content-link" onclick="openArticle('cameras-hd-vs-4k')">
+                            Ler Mais <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Dicas de Segurança -->
+                <article class="content-card" data-category="dicas">
+                    <div class="content-image">
+                        <img src="images/posicionamento-cameras.jpg" alt="Posicionamento de Câmeras">
+                        <div class="content-category-tag">Dicas</div>
+                    </div>
+                    <div class="content-info">
+                        <h3 class="content-title">7 Dicas para Posicionar Suas Câmeras</h3>
+                        <p class="content-excerpt">
+                            Maximize a eficácia do seu sistema com o posicionamento correto das câmeras. 
+                            Pontos estratégicos e ângulos ideais para cobertura completa.
+                        </p>
+                        <div class="content-meta">
+                            <span><i class="fas fa-clock"></i> 5 min</span>
+                            <span><i class="fas fa-eye"></i> 3.120 visualizações</span>
+                        </div>
+                        <button class="content-link" onclick="openArticle('posicionamento-cameras')">
+                            Ler Mais <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Tutorial em Vídeo -->
+                <article class="content-card" data-category="videos">
+                    <div class="content-image">
+                        <img src="images/video-configuracao-app.jpg" alt="Configuração do App">
+                        <div class="content-category-tag">Vídeos</div>
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="content-info">
+                        <h3 class="content-title">Como Configurar o App de Monitoramento</h3>
+                        <p class="content-excerpt">
+                            Vídeo tutorial mostrando passo a passo como configurar o aplicativo 
+                            para acessar suas câmeras remotamente do celular.
+                        </p>
+                        <div class="content-meta">
+                            <span><i class="fas fa-video"></i> 12 min</span>
+                            <span><i class="fas fa-eye"></i> 5.670 visualizações</span>
+                        </div>
+                        <button class="content-link" onclick="openVideo('configuracao-app')">
+                            Assistir <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Manutenção -->
+                <article class="content-card" data-category="manutencao">
+                    <div class="content-image">
+                        <img src="images/manutencao-sistema.jpg" alt="Manutenção do Sistema">
+                        <div class="content-category-tag">Manutenção</div>
+                    </div>
+                    <div class="content-info">
+                        <h3 class="content-title">Manutenção Preventiva do Sistema CFTV</h3>
+                        <p class="content-excerpt">
+                            Como manter seu sistema funcionando perfeitamente por anos. 
+                            Checklist mensal e cuidados essenciais com equipamentos.
+                        </p>
+                        <div class="content-meta">
+                            <span><i class="fas fa-clock"></i> 7 min</span>
+                            <span><i class="fas fa-eye"></i> 1.560 visualizações</span>
+                        </div>
+                        <button class="content-link" onclick="openArticle('manutencao-preventiva')">
+                            Ler Mais <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Guia DVR -->
+                <article class="content-card" data-category="guias">
+                    <div class="content-image">
+                        <img src="images/configuracao-dvr.jpg" alt="Configuração DVR">
+                        <div class="content-category-tag">Guias</div>
+                    </div>
+                    <div class="content-info">
+                        <h3 class="content-title">Configuração Avançada do DVR</h3>
+                        <p class="content-excerpt">
+                            Explore recursos avançados do seu DVR: detecção de movimento, 
+                            alertas por email e backup automático para nuvem.
+                        </p>
+                        <div class="content-meta">
+                            <span><i class="fas fa-clock"></i> 9 min</span>
+                            <span><i class="fas fa-eye"></i> 2.100 visualizações</span>
+                        </div>
+                        <button class="content-link" onclick="openArticle('configuracao-dvr')">
+                            Ler Mais <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Comparativo DVRs -->
+                <article class="content-card" data-category="comparativos">
+                    <div class="content-image">
+                        <img src="images/dvr-vs-nvr.jpg" alt="DVR vs NVR">
+                        <div class="content-category-tag">Comparativos</div>
+                    </div>
+                    <div class="content-info">
+                        <h3 class="content-title">DVR vs NVR: Entenda as Diferenças</h3>
+                        <p class="content-excerpt">
+                            Comparação detalhada entre DVR e NVR, suas vantagens, desvantagens 
+                            e qual escolher para cada tipo de instalação.
+                        </p>
+                        <div class="content-meta">
+                            <span><i class="fas fa-clock"></i> 11 min</span>
+                            <span><i class="fas fa-eye"></i> 1.780 visualizações</span>
+                        </div>
+                        <button class="content-link" onclick="openArticle('dvr-vs-nvr')">
+                            Ler Mais <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Dicas de Segurança -->
+                <article class="content-card" data-category="dicas">
+                    <div class="content-image">
+                        <img src="images/seguranca-residencial.jpg" alt="Segurança Residencial">
+                        <div class="content-category-tag">Dicas</div>
+                    </div>
+                    <div class="content-info">
+                        <h3 class="content-title">10 Dicas de Segurança Residencial</h3>
+                        <p class="content-excerpt">
+                            Além das câmeras, confira outras medidas importantes para 
+                            aumentar a segurança da sua casa e família.
+                        </p>
+                        <div class="content-meta">
+                            <span><i class="fas fa-clock"></i> 6 min</span>
+                            <span><i class="fas fa-eye"></i> 2.890 visualizações</span>
+                        </div>
+                        <button class="content-link" onclick="openArticle('seguranca-residencial')">
+                            Ler Mais <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Tutorial em Vídeo -->
+                <article class="content-card" data-category="videos">
+                    <div class="content-image">
+                        <img src="images/video-instalacao-camera.jpg" alt="Instalação de Câmera">
+                        <div class="content-category-tag">Vídeos</div>
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="content-info">
+                        <h3 class="content-title">Instalação de Câmera em 60 Segundos</h3>
+                        <p class="content-excerpt">
+                            Vídeo rápido mostrando como instalar uma câmera de segurança 
+                            seguindo nosso método simplificado.
+                        </p>
+                        <div class="content-meta">
+                            <span><i class="fas fa-video"></i> 1 min</span>
+                            <span><i class="fas fa-eye"></i> 8.450 visualizações</span>
+                        </div>
+                        <button class="content-link" onclick="openVideo('instalacao-60-segundos')">
+                            Assistir <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-section">
+                <button class="btn-outline load-more-btn" onclick="loadMoreContent()">
+                    <i class="fas fa-plus"></i>
+                    Carregar Mais Conteúdo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2 class="newsletter-title">Receba conteúdo exclusivo</h2>
+                    <p class="newsletter-subtitle">
+                        Cadastre-se e receba guias, dicas e novidades sobre segurança eletrônica 
+                        direto no seu email.
+                    </p>
+                </div>
+                <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+                    <input type="email" id="emailNewsletter" placeholder="Seu email" required>
+                    <button type="submit" class="btn-primary">
+                        Inscrever-se
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Modal -->
+    <div class="modal-overlay" id="articleModal">
+        <div class="modal-container article-modal">
+            <div class="modal-header">
+                <h3 class="modal-title" id="articleTitle">Título do Artigo</h3>
+                <button class="modal-close" onclick="closeArticle()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-content" id="articleContent">
+                <!-- Article content will be loaded here -->
+            </div>
+            <div class="modal-footer">
+                <div class="article-actions">
+                    <button class="btn-outline" onclick="shareArticle()">
+                        <i class="fas fa-share"></i>
+                        Compartilhar
+                    </button>
+                    <button class="btn-outline" onclick="printArticle()">
+                        <i class="fas fa-print"></i>
+                        Imprimir
+                    </button>
+                    <button class="btn-primary" onclick="closeArticle()">
+                        Fechar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div class="modal-overlay" id="videoModal">
+        <div class="modal-container video-modal">
+            <div class="modal-header">
+                <h3 class="modal-title" id="videoTitle">Vídeo Tutorial</h3>
+                <button class="modal-close" onclick="closeVideo()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-content" id="videoContent">
+                <!-- Video content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="AR Distribuidora">
+                        <span>AR Distribuidora</span>
+                    </div>
+                    <p class="footer-description">
+                        Democratizando o acesso à segurança eletrônica no Brasil com soluções completas e inovadoras.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Produtos</h3>
+                    <ul class="footer-links">
+                        <li><a href="produtos.html">Kits CFTV</a></li>
+                        <li><a href="produtos.html">Câmeras Individuais</a></li>
+                        <li><a href="produtos.html">DVRs</a></li>
+                        <li><a href="produtos.html">Acessórios</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Empresa</h3>
+                    <ul class="footer-links">
+                        <li><a href="conteudo.html">Blog</a></li>
+                        <li><a href="instaladores.html">Para Instaladores</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="#">Sobre Nós</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Suporte</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">Garantia</a></li>
+                        <li><a href="#">Instalação</a></li>
+                        <li><a href="#">Dúvidas Frequentes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Contato</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> (11) 9 9999-9999</p>
+                        <p><i class="fas fa-envelope"></i> contato@ardistribuidora.com.br</p>
+                        <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 AR Distribuidora. Todos os direitos reservados.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Política de Privacidade</a>
+                        <a href="#">Termos de Uso</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

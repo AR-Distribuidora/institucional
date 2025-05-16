@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Distribuidora | Sua segurança, nossa tecnologia</title>
+    <meta name="description" content="AR Distribuidora - Democratizando o acesso à segurança eletrônica no Brasil. Kits CFTV, câmeras, DVRs e sistemas de segurança com instalação simplificada.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="AR Distribuidora" class="logo-img">
+                    <span class="logo-text">AR Distribuidora</span>
+                </a>
+                
+                <nav class="navigation">
+                    <a href="index.html" class="nav-link active">Início</a>
+                    <a href="produtos.html" class="nav-link">Produtos</a>
+                    <a href="conteudo.html" class="nav-link">Conteúdo</a>
+                    <a href="instaladores.html" class="nav-link">Para Instaladores</a>
+                    <a href="contato.html" class="nav-link">Contato</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <a href="https://shopee.com.br" target="_blank" class="btn-secondary">
+                        <i class="fas fa-shopping-cart"></i>
+                        Loja Shopee
+                    </a>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Sua segurança, nossa tecnologia</h1>
+                    <p class="hero-subtitle">
+                        Democratizamos o acesso à segurança eletrônica no Brasil com kits completos, 
+                        instalação simplificada e suporte especializado.
+                    </p>
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Kits completos prontos para instalação</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Suporte técnico especializado</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Garantia nacional</span>
+                        </div>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="produtos.html" class="btn-primary">Ver Produtos</a>
+                        <a href="#como-funciona" class="btn-outline">Como Funciona</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <img src="images/hero-security-system.jpg" alt="Sistema de Segurança Completo" class="hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">1500+</div>
+                    <div class="stat-label">Kits Vendidos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Clientes Satisfeitos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24h</div>
+                    <div class="stat-label">Suporte Técnico</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">3 Anos</div>
+                    <div class="stat-label">Garantia Nacional</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Produtos em Destaque</h2>
+                <p class="section-subtitle">Soluções completas para sua segurança</p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card featured" data-category="kit-basico">
+                    <div class="product-badge">Mais Vendido</div>
+                    <div class="product-image">
+                        <img src="images/kit-4-cameras.jpg" alt="Kit 4 Câmeras HD + DVR">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Kit 4 Câmeras HD + DVR</h3>
+                        <p class="product-description">Kit completo com 4 câmeras HD, DVR 4 canais, cabos e fonte. Ideal para casas pequenas.</p>
+                        <div class="product-features">
+                            <span><i class="fas fa-video"></i> 4 Câmeras HD</span>
+                            <span><i class="fas fa-mobile-alt"></i> App Grátis</span>
+                            <span><i class="fas fa-tools"></i> Instalação Fácil</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-old">R$ 599,90</span>
+                            <span class="price-current">R$ 399,90</span>
+                        </div>
+                        <button class="btn-primary product-btn" onclick="redirectToShopee('kit-4-cameras')">
+                            Ver na Shopee
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="kit-premium">
+                    <div class="product-image">
+                        <img src="images/kit-8-cameras.jpg" alt="Kit 8 Câmeras HD + DVR">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Kit 8 Câmeras HD + DVR</h3>
+                        <p class="product-description">Kit profissional com 8 câmeras HD, DVR 8 canais e recursos avançados.</p>
+                        <div class="product-features">
+                            <span><i class="fas fa-video"></i> 8 Câmeras HD</span>
+                            <span><i class="fas fa-eye"></i> Visão Noturna</span>
+                            <span><i class="fas fa-cloud"></i> Backup em Nuvem</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">R$ 699,90</span>
+                        </div>
+                        <button class="btn-primary product-btn" onclick="redirectToShopee('kit-8-cameras')">
+                            Ver na Shopee
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="acessorios">
+                    <div class="product-image">
+                        <img src="images/camera-individual.jpg" alt="Câmera HD Individual">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Câmera HD Individual</h3>
+                        <p class="product-description">Câmera HD para expansão ou reposição do seu sistema.</p>
+                        <div class="product-features">
+                            <span><i class="fas fa-video"></i> Full HD 1080p</span>
+                            <span><i class="fas fa-eye"></i> Visão Noturna</span>
+                            <span><i class="fas fa-shield-alt"></i> IP66</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">R$ 89,90</span>
+                        </div>
+                        <button class="btn-primary product-btn" onclick="redirectToShopee('camera-individual')">
+                            Ver na Shopee
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-footer">
+                <a href="produtos.html" class="btn-outline">Ver Todos os Produtos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="como-funciona">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Como Funciona</h2>
+                <p class="section-subtitle">Segurança em 3 passos simples</p>
+            </div>
+            
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="step-title">Escolha seu Kit</h3>
+                    <p class="step-description">
+                        Selecione o kit ideal para sua necessidade. Temos opções para casas pequenas até empresas.
+                    </p>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="step-title">Instale Facilmente</h3>
+                    <p class="step-description">
+                        Siga nosso tutorial em vídeo. 90% dos clientes instalam sozinhos em menos de 2 horas.
+                    </p>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="step-title">Monitore do Celular</h3>
+                    <p class="step-description">
+                        Baixe o app gratuito e monitore sua propriedade de qualquer lugar do mundo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits">
+        <div class="container">
+            <div class="benefits-content">
+                <div class="benefits-text">
+                    <h2 class="section-title">Por que escolher a AR Distribuidora?</h2>
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Kits Completos</h4>
+                                <p>Tudo que você precisa em um só pacote: câmeras, DVR, cabos e fontes.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Instalação Simplificada</h4>
+                                <p>Tutorial em vídeo e cabos pré-cortados facilitam a instalação.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Suporte Especializado</h4>
+                                <p>Nossa equipe técnica está sempre disponível para ajudar.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Garantia Nacional</h4>
+                                <p>3 anos de garantia com assistência técnica em todo o Brasil.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="contato.html" class="btn-primary">Fale Conosco</a>
+                </div>
+                <div class="benefits-visual">
+                    <img src="images/benefits-illustration.jpg" alt="Benefícios AR Distribuidora">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">O que nossos clientes dizem</h2>
+                <p class="section-subtitle">Mais de 1500 clientes satisfeitos</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Comprei o kit de 4 câmeras e instalei sozinho seguindo o tutorial. 
+                            Funcionou perfeitamente! Recomendo demais."
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="images/customer-1.jpg" alt="João Silva">
+                            <div>
+                                <strong>João Silva</strong>
+                                <span>São Paulo, SP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Excelente qualidade e preço justo. O suporte técnico é muito atencioso 
+                            e resolveu todas minhas dúvidas rapidamente."
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="images/customer-2.jpg" alt="Maria Santos">
+                            <div>
+                                <strong>Maria Santos</strong>
+                                <span>Rio de Janeiro, RJ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Sou instalador e sempre recomendo a AR Distribuidora para meus clientes. 
+                            Produtos de qualidade e entrega rápida."
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="images/customer-3.jpg" alt="Carlos Oliveira">
+                            <div>
+                                <strong>Carlos Oliveira</strong>
+                                <span>Instalador Profissional</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Proteja sua família hoje mesmo</h2>
+                <p class="cta-subtitle">
+                    Mais de 1500 famílias já confiam na AR Distribuidora para sua segurança
+                </p>
+                <div class="cta-actions">
+                    <a href="produtos.html" class="btn-primary">Ver Produtos</a>
+                    <a href="instaladores.html" class="btn-outline">Para Instaladores</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="AR Distribuidora">
+                        <span>AR Distribuidora</span>
+                    </div>
+                    <p class="footer-description">
+                        Democratizando o acesso à segurança eletrônica no Brasil com soluções completas e inovadoras.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Produtos</h3>
+                    <ul class="footer-links">
+                        <li><a href="produtos.html">Kits CFTV</a></li>
+                        <li><a href="produtos.html">Câmeras Individuais</a></li>
+                        <li><a href="produtos.html">DVRs</a></li>
+                        <li><a href="produtos.html">Acessórios</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Empresa</h3>
+                    <ul class="footer-links">
+                        <li><a href="conteudo.html">Blog</a></li>
+                        <li><a href="instaladores.html">Para Instaladores</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="#">Sobre Nós</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Suporte</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">Garantia</a></li>
+                        <li><a href="#">Instalação</a></li>
+                        <li><a href="#">Dúvidas Frequentes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Contato</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> (11) 9 9999-9999</p>
+                        <p><i class="fas fa-envelope"></i> contato@ardistribuidora.com.br</p>
+                        <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 AR Distribuidora. Todos os direitos reservados.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Política de Privacidade</a>
+                        <a href="#">Termos de Uso</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

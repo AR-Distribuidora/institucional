@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Instaladores | AR Distribuidora</title>
+    <meta name="description" content="Programa AR Instaladores: parcerias, descontos especiais, suporte técnico e oportunidades de crescimento para profissionais de segurança eletrônica.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="AR Distribuidora" class="logo-img">
+                    <span class="logo-text">AR Distribuidora</span>
+                </a>
+                
+                <nav class="navigation">
+                    <a href="index.html" class="nav-link">Início</a>
+                    <a href="produtos.html" class="nav-link">Produtos</a>
+                    <a href="conteudo.html" class="nav-link">Conteúdo</a>
+                    <a href="instaladores.html" class="nav-link active">Para Instaladores</a>
+                    <a href="contato.html" class="nav-link">Contato</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <a href="https://shopee.com.br" target="_blank" class="btn-secondary">
+                        <i class="fas fa-shopping-cart"></i>
+                        Loja Shopee
+                    </a>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="installers-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="hero-label">Programa AR Instaladores</span>
+                    <h1 class="hero-title">Cresça seu negócio conosco</h1>
+                    <p class="hero-subtitle">
+                        Junte-se à rede de instaladores parceiros da AR Distribuidora e tenha acesso a 
+                        preços especiais, suporte técnico e oportunidades exclusivas.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Instaladores Parceiros</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15%</span>
+                            <span class="stat-label">Desconto Mínimo</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">24h</span>
+                            <span class="stat-label">Suporte Técnico</span>
+                        </div>
+                    </div>
+                    <div class="hero-cta">
+                        <button class="btn-primary" onclick="openPartnershipForm()">
+                            Quero Ser Parceiro
+                        </button>
+                        <button class="btn-outline" onclick="scrollToSection('beneficios')">
+                            Ver Benefícios
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <img src="images/instalador-profissional.jpg" alt="Instalador Profissional" class="hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Tiers -->
+    <section class="partnership-tiers" id="beneficios">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Níveis de Parceria</h2>
+                <p class="section-subtitle">Escolha o nível que melhor se adequa ao seu negócio</p>
+            </div>
+            
+            <div class="tiers-grid">
+                <!-- Tier Bronze -->
+                <div class="tier-card">
+                    <div class="tier-header">
+                        <div class="tier-icon bronze">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h3 class="tier-name">Bronze</h3>
+                        <p class="tier-subtitle">Instalador Individual</p>
+                    </div>
+                    <div class="tier-content">
+                        <div class="tier-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-check"></i>
+                                <span>10% de desconto em todos os produtos</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check"></i>
+                                <span>Prazo de pagamento estendido (30 dias)</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check"></i>
+                                <span>Suporte técnico por WhatsApp</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check"></i>
+                                <span>Material de marketing básico</span>
+                            </div>
+                        </div>
+                        <div class="tier-requirements">
+                            <h4>Requisitos</h4>
+                            <ul>
+                                <li>Instalações mensais: 5-15</li>
+                                <li>CNPJ ativo</li>
+                                <li>Certificação básica AR</li>
+                            </ul>
+                        </div>
+                        <button class="btn-outline tier-btn" onclick="selectTier('bronze')">
+                            Escolher Bronze
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tier Silver -->
+                <div class="tier-card featured">
+                    <div class="tier-badge">Mais Popular</div>
+                    <div class="tier-header">
+                        <div class="tier-icon silver">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h3 class="tier-name">Silver</h3>
+                        <p class="tier-subtitle">Pequena Empresa</p>
+                    </div>
+                    <div class="tier-content">
+                        <div class="tier-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-check"></i>
+                                <span>15% de desconto + bônus por volume</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check"></i>
+                                <span>3% de comissão por indicação</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check"></i>
+                                <span>Suporte técnico prioritário</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check"></i>
+                                <span>Kit de demonstração gratuito</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check"></i>
+                                <span>Treinamento técnico avançado</span>
+                            </div>
+                        </div>
+                        <div class="tier-requirements">
+                            <h4>Requisitos</h4>
+                            <ul>
+                                <li>Instalações mensais: 16-50</li>
+                                <li>CNPJ ativo há 1+ ano</li>
+                                <li>Certificação avançada AR</li>
+                            </ul>
+                        </div>
+                        <button class="btn-primary tier-btn" onclick="selectTier('silver')">
+                            Escolher Silver
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tier Gold -->
+                <div class="tier-card">
+                    <div class="tier-header">
+                        <div class="tier-icon gold">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h3 class="tier-name">Gold</h3>
+                        <p class="tier-subtitle">Distribuidor Regional</p>
+                    </div>
+                    <div class="tier-content">
+                        <div class="tier-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-check"></i>
+                                <span>20% de desconto + pricing especial</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check"></i>
+                                <span>5% de comissão por indicação</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check"></i>
+                                <span>Exclusividade territorial</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check"></i>
+                                <span>Gerente de conta dedicado</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check"></i>
+                                <span>Co-marketing e campanhas conjuntas</span>
+                            </div>
+                        </div>
+                        <div class="tier-requirements">
+                            <h4>Requisitos</h4>
+                            <ul>
+                                <li>Instalações mensais: 50+</li>
+                                <li>CNPJ ativo há 2+ anos</li>
+                                <li>Certificação master AR</li>
+                            </ul>
+                        </div>
+                        <button class="btn-outline tier-btn" onclick="selectTier('gold')">
+                            Escolher Gold
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Vantagens Exclusivas</h2>
+                <p class="section-subtitle">O que você ganha sendo nosso parceiro</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-percent"></i>
+                    </div>
+                    <h3 class="benefit-title">Preços Especiais</h3>
+                    <p class="benefit-description">
+                        Descontos de 10% a 20% em todos os produtos, com preços escalonados por volume de compras.
+                    </p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="benefit-title">Suporte Técnico</h3>
+                    <p class="benefit-description">
+                        Suporte especializado 24h via WhatsApp, email e telefone. Resolução rápida de problemas técnicos.
+                    </p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="benefit-title">Treinamentos</h3>
+                    <p class="benefit-description">
+                        Capacitação técnica e comercial contínua, certificações e acesso a novos produtos em primeira mão.
+                    </p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3 class="benefit-title">Marketing</h3>
+                    <p class="benefit-description">
+                        Material promocional personalizado, campanhas digitais e apoio em feiras e eventos do setor.
+                    </p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="benefit-title">Indicações</h3>
+                    <p class="benefit-description">
+                        Receba clientes qualificados através do nosso programa de indicações e aumente sua carteira.
+                    </p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="benefit-title">Ferramentas</h3>
+                    <p class="benefit-description">
+                        Acesso a calculadora de projetos, templates de propostas e ferramenta de gerenciamento.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="success-stories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Histórias de Sucesso</h2>
+                <p class="section-subtitle">Veja como nossos parceiros cresceram conosco</p>
+            </div>
+            
+            <div class="stories-grid">
+                <div class="story-card">
+                    <div class="story-content">
+                        <div class="story-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>
+                                "Desde que me tornei parceiro da AR Distribuidora, minhas vendas aumentaram 60%. 
+                                O suporte técnico é excepcional e os produtos têm qualidade incomparável."
+                            </p>
+                        </div>
+                        <div class="story-author">
+                            <img src="images/partner-1.jpg" alt="João Instalador">
+                            <div class="author-info">
+                                <h4>João Silva</h4>
+                                <p>Instalador Profissional - SP</p>
+                                <span class="story-stats">
+                                    <i class="fas fa-star"></i>
+                                    200% aumento nas vendas
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="story-card">
+                    <div class="story-content">
+                        <div class="story-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>
+                                "A AR Distribuidora não é apenas um fornecedor, é um parceiro de negócios. 
+                                Com o programa Gold, consegui expandir para 3 cidades."
+                            </p>
+                        </div>
+                        <div class="story-author">
+                            <img src="images/partner-2.jpg" alt="Maria Segurança">
+                            <div class="author-info">
+                                <h4>Maria Santos</h4>
+                                <p>Diretora - SecureTech RJ</p>
+                                <span class="story-stats">
+                                    <i class="fas fa-star"></i>
+                                    Expansão para 3 cidades
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="story-card">
+                    <div class="story-content">
+                        <div class="story-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>
+                                "Os treinamentos da AR me ajudaram a especializar a empresa. Hoje somos referência 
+                                em sistemas de alta segurança na nossa região."
+                            </p>
+                        </div>
+                        <div class="story-author">
+                            <img src="images/partner-3.jpg" alt="Carlos Tech">
+                            <div class="author-info">
+                                <h4>Carlos Oliveira</h4>
+                                <p>CEO - TechSec Sistemas</p>
+                                <span class="story-stats">
+                                    <i class="fas fa-star"></i>
+                                    Líder regional
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools & Resources -->
+    <section class="tools-resources">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Ferramentas e Recursos</h2>
+                <p class="section-subtitle">Tudo que você precisa para vender mais</p>
+            </div>
+            
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3 class="tool-title">Calculadora de Projetos</h3>
+                    <p class="tool-description">
+                        Ferramenta online para calcular quantidade de câmeras, DVRs e acessórios 
+                        baseado no tamanho e tipo do local.
+                    </p>
+                    <button class="btn-outline tool-btn">
+                        Usar Calculadora
+                    </button>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3 class="tool-title">Templates de Proposta</h3>
+                    <p class="tool-description">
+                        Templates profissionais personalizáveis para apresentar suas propostas 
+                        de forma organizada e convincente.
+                    </p>
+                    <button class="btn-outline tool-btn">
+                        Download Templates
+                    </button>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="tool-title">Portal do Parceiro</h3>
+                    <p class="tool-description">
+                        Acompanhe suas vendas, comissões, histórico de pedidos e acesse relatórios 
+                        detalhados de performance.
+                    </p>
+                    <button class="btn-outline tool-btn">
+                        Acessar Portal
+                    </button>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <h3 class="tool-title">Biblioteca de Vídeos</h3>
+                    <p class="tool-description">
+                        Tutoriais de instalação, configuração e vendas para usar com seus clientes 
+                        ou em sua capacitação.
+                    </p>
+                    <button class="btn-outline tool-btn">
+                        Ver Vídeos
+                    </button>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="tool-title">App do Instalador</h3>
+                    <p class="tool-description">
+                        Aplicativo exclusivo para agendar instalações, acessar manuais técnicos 
+                        e solicitar suporte no local.
+                    </p>
+                    <button class="btn-outline tool-btn">
+                        Baixar App
+                    </button>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="tool-title">Certificações</h3>
+                    <p class="tool-description">
+                        Cursos online com certificação reconhecida pelo mercado para aumentar 
+                        sua credibilidade e conhecimento técnico.
+                    </p>
+                    <button class="btn-outline tool-btn">
+                        Ver Cursos
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Perguntas Frequentes</h2>
+                <p class="section-subtitle">Tudo que você precisa saber sobre o programa</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(1)">
+                        Como me tornar um parceiro da AR Distribuidora?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer" id="faq-1">
+                        <p>
+                            Para se tornar nosso parceiro, você precisa ter CNPJ ativo, realizar o cadastro 
+                            online e passar por nosso processo de qualificação. O processo leva em média 3-5 dias úteis.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(2)">
+                        Qual é o pedido mínimo para parceiros?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer" id="faq-2">
+                        <p>
+                            O pedido mínimo varia conforme o nível de parceria: Bronze (R$ 1.000), 
+                            Silver (R$ 2.500) e Gold (R$ 5.000). Valores menores podem ser negociados em casos especiais.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(3)">
+                        Como funciona o programa de comissões?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer" id="faq-3">
+                        <p>
+                            Você recebe comissão por cada cliente indicado que realizar compra conosco. 
+                            As comissões são pagas mensalmente e variam de 3% a 5% conforme seu nível de parceria.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(4)">
+                        Há treinamento e suporte técnico?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer" id="faq-4">
+                        <p>
+                            Sim! Oferecemos treinamentos presenciais e online, suporte técnico 24h, 
+                            biblioteca de vídeos e certificações para parceiros de todos os níveis.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(5)">
+                        Posso ter exclusividade territorial?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer" id="faq-5">
+                        <p>
+                            A exclusividade territorial está disponível apenas para parceiros Gold que 
+                            atendem critérios específicos de volume e performance regional.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(6)">
+                        Como recebo o material promocional?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer" id="faq-6">
+                        <p>
+                            Todo material promocional está disponível no Portal do Parceiro para download. 
+                            Materiais físicos como banners e catálogos são enviados mediante solicitação.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Pronto para crescer conosco?</h2>
+                <p class="cta-subtitle">
+                    Junte-se aos mais de 500 instaladores que já fazem parte da nossa rede de sucesso
+                </p>
+                <div class="cta-actions">
+                    <button class="btn-primary" onclick="openPartnershipForm()">
+                        Cadastrar-se Agora
+                    </button>
+                    <a href="contato.html" class="btn-outline">
+                        Falar com Especialista
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Form Modal -->
+    <div class="modal-overlay" id="partnershipModal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 class="modal-title">Solicitação de Parceria</h3>
+                <button class="modal-close" onclick="closePartnershipForm()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-content">
+                <form class="partnership-form" onsubmit="submitPartnershipForm(event)">
+                    <div class="form-section">
+                        <h4>Informações Pessoais</h4>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="name">Nome Completo *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefone *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="city">Cidade *</label>
+                                <input type="text" id="city" name="city" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h4>Informações da Empresa</h4>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="companyName">Nome da Empresa *</label>
+                                <input type="text" id="companyName" name="companyName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cnpj">CNPJ *</label>
+                                <input type="text" id="cnpj" name="cnpj" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="experience">Tempo de Experiência *</label>
+                                <select id="experience" name="experience" required>
+                                    <option value="">Selecione...</option>
+                                    <option value="1-2">1-2 anos</option>
+                                    <option value="3-5">3-5 anos</option>
+                                    <option value="6-10">6-10 anos</option>
+                                    <option value="10+">Mais de 10 anos</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="monthlyInstalls">Instalações por Mês *</label>
+                                <select id="monthlyInstalls" name="monthlyInstalls" required>
+                                    <option value="">Selecione...</option>
+                                    <option value="5-15">5-15</option>
+                                    <option value="16-30">16-30</option>
+                                    <option value="31-50">31-50</option>
+                                    <option value="50+">Mais de 50</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h4>Interesses</h4>
+                        <div class="form-group">
+                            <label for="tier">Nível de Parceria Desejado *</label>
+                            <select id="tier" name="tier" required>
+                                <option value="">Selecione...</option>
+                                <option value="bronze">Bronze</option>
+                                <option value="silver">Silver</option>
+                                <option value="gold">Gold</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem (Opcional)</label>
+                            <textarea id="message" name="message" rows="4" 
+                                placeholder="Conte-nos mais sobre seu negócio e interesse em nossa parceria..."></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" class="btn-outline" onclick="closePartnershipForm()">
+                            Cancelar
+                        </button>
+                        <button type="submit" class="btn-primary">
+                            Enviar Solicitação
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="AR Distribuidora">
+                        <span>AR Distribuidora</span>
+                    </div>
+                    <p class="footer-description">
+                        Democratizando o acesso à segurança eletrônica no Brasil com soluções completas e inovadoras.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Produtos</h3>
+                    <ul class="footer-links">
+                        <li><a href="produtos.html">Kits CFTV</a></li>
+                        <li><a href="produtos.html">Câmeras Individuais</a></li>
+                        <li><a href="produtos.html">DVRs</a></li>
+                        <li><a href="produtos.html">Acessórios</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Empresa</h3>
+                    <ul class="footer-links">
+                        <li><a href="conteudo.html">Blog</a></li>
+                        <li><a href="instaladores.html">Para Instaladores</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="#">Sobre Nós</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Suporte</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">Garantia</a></li>
+                        <li><a href="#">Instalação</a></li>
+                        <li><a href="#">Dúvidas Frequentes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Contato</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> (11) 9 9999-9999</p>
+                        <p><i class="fas fa-envelope"></i> contato@ardistribuidora.com.br</p>
+                        <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 AR Distribuidora. Todos os direitos reservados.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Política de Privacidade</a>
+                        <a href="#">Termos de Uso</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
