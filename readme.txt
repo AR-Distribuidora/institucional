@@ -1,3 +1,5 @@
+Backlog: Catalogo de outras empresas ppa, hikvision...
+
 # AR Distribuidora - Website MVP
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
